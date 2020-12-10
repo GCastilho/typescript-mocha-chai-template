@@ -1,0 +1,30 @@
+{
+  "name": "typescript-mocha-chai-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "dotenv -e .env nodemon src/index.ts",
+    "build": "eslint . && tsc --build",
+    "test": "dotenv -e .env.test mocha tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/chai-as-promised": "^7.1.3",
+    "@types/node": "^12.19.8",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dotenv-cli": "^4.0.0",
+    "eslint": "^7.15.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  }
+}
